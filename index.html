@@ -3,6 +3,8 @@
   <title>My Profile</title>
   <meta name="description" content="My profile for Le Wagon Web Development Batch 1900-London">
   <meta charset="utf-8">
+  <!-- add this in styles -->
+  <link rel="icon" type="image/x-icon" href="images/flower-gem.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,36 +15,34 @@
 <body>
   <div class="container">
     <div class="card">
-      <img src="./images/profile-photo.jpg" class="img-oval border-thin-red">
-      <h1 id="name" class="header-red">Kit Trowbridge</h1>
-      <h2 class="header-red">✷ Aspiring Programmer ✷</h2>
+      <img src="./images/profile.jpg" class="avatar">
+      <div class="name-plate">
+        <h1>Kit Trowbridge</h1>
+        <h2>✷ Programmer ✷</h2>
+      </div>
       <p>I have a background in Fine Arts and I am from Maryland, USA</p>
-      <div class="btn-gradient border-thin-red">
+      <!-- how do I get the whole button to be clickable, not just p text? -->
+      <div class="btn">
         <a href="https://www.kit-trowbridge.com/" target="_blank">
-          <p id="portfolio">Check out my painting portfolio</p>
+          <p>Check out my painting portfolio</p>
         </a>
       </div>
     </div>
     <div class="card">
-      <ul class="ul-no-margin">
         <p>
-          <em>Follow meeeee:</em>
+          Follow meeeee:
         </p>
-        <li>
-          <a href="https://github.com/kit-trowbridge" target="_blank">
-            <i class="fa-brands fa-github-alt"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/kit-trowbridge-4599a9104" target="_blank">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/kittrow" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </li>
+        <div class="icon-container">
+            <a href="https://github.com/kit-trowbridge" target="_blank">
+              <i class="icon fa-brands fa-github-alt"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/kit-trowbridge-4599a9104" target="_blank">
+              <i class="icon fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/kittrow" target="_blank">
+              <i class="icon fa-brands fa-instagram"></i>
+            </a>
+        </div>
       </ul>
     </div>
   </div>

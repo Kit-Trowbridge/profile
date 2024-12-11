@@ -1,111 +1,66 @@
+@import url("./components/container.css");
+@import url("./components/button.css");
+@import url("./components/animate.css");
+@import url("./components/icon.css");
+@import url("./components/card.css");
+@import url("./components/avatar.css");
+
 body {
+  cursor: url(images/red-mouse.png), pointer;
   font-family: "EB Garamond", serif;
-  color: #384B70;
+  color: var(--cherry-red);
+  /* color: #384B70; */
   line-height: 25px;
   font-size: 18px;
   text-align: center;
-  background-image: url(./images/microsoft-beach.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.container {
-  width: 600px;
-  margin: 0 auto;
-}
-
-.card {
-  background-color: rgba(252, 250, 238, 0.8);
-  margin-bottom: 20px;
   padding: 20px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.55);
-  border-radius: 4px;
+  background-image: linear-gradient(rgba(255, 35, 72, 0.5), rgba(252, 250, 238, 0.8)), url(images/kitkat2.jpg);
+  background-repeat: none;
+  background-size: cover;
+  /* background-image: linear-gradient(rgba(255, 35, 72, 0.5), rgba(252, 250, 238, 0.8)), url(images/stars-falling.png);
+  background-repeat: repeat;
+  background-size: 500px; */
 }
 
-#name {
-  /* font-family: "Ballet", cursive;
-  font-size: 50px;
-  margin-top: 50px;*/
+h1 {
   font-family: "Neonderthaw", cursive;
   font-size: 50px;
   line-height: 45px;
-
+  margin-bottom: 0;
+  text-shadow: 1px 1px 4px rgba(255, 35, 72, 0.5);
 }
 
-.img-oval {
-  width: 150px;
-  border-radius: 50%;
-}
+/* h1:hover {
 
-.border-thin-red {
-  border: 0.5px solid #B8001F;
-}
-
-.header-red {
-  color: #B8001F;
-}
+} */
 
 h2 {
   font-size: 20px;
 }
 
-i {
-  color: #B8001F;
-  font-size: 25px;
-}
-
 a {
+  color: var(--cherry-red);
   text-decoration: none;
 }
 
-li {
-  list-style: none;
-  display: inline;
-  padding-left: 10px;
-  padding-right: 10px;
+a:hover {
+  color: var(--brighter-cherry);
+  cursor: url(images/black-red-mouse.png), pointer;
 }
 
-.fa-brands:hover {
-  color: #ff2348;
-}
-
-.ul-no-margin {
-  padding-left: 0;
-  color: #B8001F;
-  margin-block-start: -1em;
-  margin-block-end: 0;
-}
-
-#portfolio {
-  color: #384B70;
-  font-size: 14px;
-  margin: 0;
-}
-
-#portfolio:hover {
-  font-weight: bolder;
-}
-
-.btn-gradient {
-  /* border: 1px solid #B8001F; */
-  width: fit-content;
-  margin: 0 auto;
-  padding: 5px 15px;
-  background-image: linear-gradient(to right, #b8001f7e, #fcfaee81, #384b7086);
-  /* transition: 0.3s ease; */
-  border-radius: 3px;
-}
-
-.btn-gradient:hover{
-  background-image: linear-gradient(to left, #b8001f7e, #fcfaee81, #384b7086);
-}
-/*
-@media (max-width: 960px) {
-  For a screen < 960px, this CSS will be read
-  .container {
-    width: 700px;
-  }
+/* a:active {
+  color: rgb(255, 0, 195);
 } */
+
+p {
+  margin-top: 0;
+}
+
+
+:root {
+  --cherry-red: #B8001F;
+  --brighter-cherry: #ff2348;
+}
 
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
